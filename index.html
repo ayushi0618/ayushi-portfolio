@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayushi Singh — Full‑Stack Developer</title>
+  <meta name="description" content="Ayushi Singh — Full-Stack Developer. Frontend, Backend & Full-Stack projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-50 via-pink-50 to-yellow-50 text-slate-900 antialiased">
+
+  <header class="fixed w-full z-30 backdrop-blur-md bg-white/60 dark:bg-slate-900/60 border-b border-white/10">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="logo w-12 h-12 rounded-3xl bg-gradient-to-br from-indigo-600 via-pink-500 to-yellow-400 flex items-center justify-center text-white font-extrabold shadow-2xl transform rotate-6">AY</div>
+        <div>
+          <div class="text-lg font-bold">ayushi singh</div>
+          <div class="text-xs text-slate-600">Full‑Stack Developer</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://github.com/ayushi0618" target="_blank" class="nav-link">GitHub</a>
+        <button id="themeToggle" class="ml-2 p-2 rounded-md" title="Toggle dark mode">🌓</button>
+      </nav>
+
+      <button id="mobileBtn" class="md:hidden p-2 rounded-lg">☰</button>
+    </div>
+  </header>
+
+  <main class="pt-28">
+    <!-- Hero -->
+    <section class="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          hi, i'm <span class="gradient-text">ayushi singh</span><br>
+          <span class="text-indigo-600">Full‑Stack Developer</span><span class="text-slate-500"> —</span> crafting delightful web experiences.
+        </h1>
+        <p class="text-slate-700 max-w-xl text-lg">
+          Third-year B.Tech (CSE) student building across the stack — polished frontends, robust backends and deployed apps. I love learning modern tools like Tailwind and shipping beautiful, interactive interfaces.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+
+        <div class="mt-4 flex gap-3 flex-wrap items-center">
+          <span class="text-xs text-slate-500">Tech highlights:</span>
+          <div class="flex gap-2">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Tailwind</span>
+            <span class="chip">Node.js</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="mockup-card p-6 rounded-3xl shadow-2xl overflow-hidden">
+          <div class="screen h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-white to-indigo-50 p-6">
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="w-36 h-4 bg-slate-100 rounded-full mb-4 animate-pulse"></div>
+                <div class="h-36 rounded-lg bg-gradient-to-r from-indigo-100 via-pink-50 to-yellow-50 flex items-center justify-center text-slate-300 font-bold text-2xl">
+                  Interactive Preview
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-xs text-slate-500">Featured project</div>
+                  <div class="font-semibold">Chess Arena</div>
+                </div>
+                <div class="text-sm font-medium text-indigo-600">View on GitHub →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- floating blob -->
+        <svg class="absolute -right-10 -top-10 w-48 opacity-40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#f43f5e"/></linearGradient></defs>
+          <path fill="url(#g2)" d="M38.4,-32.3C52.8,-21.7,67.7,-9.9,70.8,4.8C74,19.5,65.5,37.8,51.1,48.5C36.7,59.1,16.4,62.1,0.3,61.7C-15.8,61.3,-31.6,57.6,-43.7,46.8C-55.8,36.1,-64.2,18.1,-64.2,0.7C-64.2,-16.7,-55.8,-33.4,-43.2,-44.1C-30.5,-54.8,-15.3,-59.6,0.8,-60.5C16.9,-61.4,33.8,-58.9,38.4,-32.3Z" transform="translate(100 100)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-2 space-y-4">
+          <h2 class="text-3xl font-extrabold">About</h2>
+          <p class="text-slate-700 leading-relaxed">
+            I'm a third-year B.Tech CSE (Core) student who builds full‑stack applications — from pixel-perfect frontends to APIs and databases. I enjoy learning new technologies and deploying projects end-to-end.
+          </p>
+
+          <ul class="grid sm:grid-cols-2 gap-3 mt-6">
+            <li class="info-card"><strong>Degree</strong> B.Tech (CSE) — Third year</li>
+            <li class="info-card"><strong>Interests</strong> Web Development, Cloud, UI/UX</li>
+            <li class="info-card"><strong>Tools</strong> Git, VSCode, Postman, NPM</li>
+            <li class="info-card"><strong>Open to</strong> Internships & freelance</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="stats-card rounded-2xl p-6 bg-gradient-to-br from-white to-indigo-50 shadow-lg">
+            <div class="text-sm text-slate-600 font-medium mb-4">Quick stats</div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="stat"><div class="num">8+</div><div class="label">Projects</div></div>
+              <div class="stat"><div class="num">3</div><div class="label">Internships</div></div>
+              <div class="stat"><div class="num">95%</div><div class="label">Frontend</div></div>
+              <div class="stat"><div class="num">80%</div><div class="label">Backend</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container mx-auto px-6 py-12">
+      <h2 class="text-3xl font-extrabold">Skills & Technologies</h2>
+      <p class="text-slate-600 mt-2 max-w-2xl">A selection of tools and languages I use regularly.</p>
+
+      <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="skill-card"><h4>Frontend</h4><p>HTML • CSS • JavaScript • Tailwind</p></div>
+        <div class="skill-card"><h4>Backend</h4><p>Node.js • Express • REST</p></div>
+        <div class="skill-card"><h4>Languages</h4><p>C • C++ • Java • JavaScript</p></div>
+        <div class="skill-card"><h4>Tools</h4><p>NPM • Git • Deployment • VSCode</p></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container mx-auto px-6 py-12">
+      <h2 class="text-3xl font-extrabold">Selected Projects</h2>
+      <p class="text-slate-600 mt-2">Three highlighted projects — click to view code or live demos.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <!-- Chess Arena -->
+        <article class="project animated-card">
+          <div class="project-media">♟️ Chess Arena</div>
+          <h3 class="project-title">Chess Arena</h3>
+          <p class="project-desc">A browser-based chess game built with JavaScript — interactive board, AI opponent and clean UX.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-sm text-slate-500">JavaScript • HTML • CSS</div>
+            <div class="flex gap-2">
+              <a href="https://github.com/ayushi0618/chess-arenaa" target="_blank" class="btn-sm">Code</a>
+              <a href="#" class="btn-sm-outline">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Student ERP -->
+        <article class="project animated-card">
+          <div class="project-media">🎓 Student ERP</div>
+          <h3 class="project-title">Student ERP</h3>
+          <p class="project-desc">An ERP prototype for managing student data, attendance and profiles. Built with HTML and supporting scripts.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-sm text-slate-500">HTML • JS • Backend</div>
+            <div class="flex gap-2">
+              <a href="https://github.com/ayushi0618/Studentt-erp" target="_blank" class="btn-sm">Code</a>
+              <a href="#" class="btn-sm-outline">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Food.ai (coming soon) -->
+        <article class="project animated-card">
+          <div class="project-media">🍽️ Food.ai</div>
+          <h3 class="project-title">Food.ai</h3>
+          <p class="project-desc">An AI-inspired food project (modeling/recognition). Live demo / repo not available publicly yet — coming soon.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-sm text-slate-500">AI • Python • APIs</div>
+            <div class="flex gap-2">
+              <a href="#" class="btn-sm">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div class="space-y-4">
+          <h2 class="text-3xl font-extrabold">Get in touch</h2>
+          <p class="text-slate-700">I'm available for internships, freelance projects and collaborations. Reach out and let's build something great.</p>
+
+          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+            <li><strong>Email:</strong> <a href="mailto:ayushi.singh0618@gmail.com" class="link-ghost">ayushi.singh0618@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+918766315441" class="link-ghost">+91 8766315441</a></li>
+            <li><strong>Location:</strong> India</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/ayushi0618" target="_blank" class="link-ghost">github.com/ayushi0618</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ayushi-singh-247126293" target="_blank" class="link-ghost">View profile</a></li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="space-y-4 bg-white p-6 rounded-2xl shadow">
+          <div><label class="block text-sm text-slate-600">Your name</label><input name="name" required class="input" placeholder="Your name"></div>
+          <div><label class="block text-sm text-slate-600">Email</label><input name="email" type="email" required class="input" placeholder="you@example.com"></div>
+          <div><label class="block text-sm text-slate-600">Message</label><textarea name="message" rows="4" required class="input" placeholder="Say hi — what's the project?"></textarea></div>
+          <div class="flex items-center gap-4"><button type="submit" class="btn-primary">Send message</button><div id="formStatus" class="text-sm text-slate-500"></div></div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-600">
+      © <span id="year"></span> ayushi singh • Built with ❤️ • HTML · CSS · JS
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
