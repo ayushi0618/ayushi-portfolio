@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = data.get('message') || '';
     const subject = encodeURIComponent('Portfolio contact from ' + name);
     const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="ayushi-singh-247126293" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/ayushi-singh-247126293?trk=profile-badge">Ayushi Singh</a></div>
+              
     window.location.href = 'mailto:ayushi.singh0618@gmail.com?subject=' + subject + '&body=' + body;
     status.textContent = 'Opening your email client...';
     setTimeout(()=> status.textContent = 'If nothing opened, copy email: ayushi.singh0618@gmail.com', 2500);
